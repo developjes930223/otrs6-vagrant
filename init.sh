@@ -56,7 +56,8 @@ sudo usermod -G apache otrs
 echo "Copying OTRS Config.pm"
 cd /opt/otrs/
 cp Kernel/Config.pm.dist Kernel/Config.pm
-cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm
+cp Kernel/Config/GenericAgent.pm.dist Kernel/Config/GenericAgent.pm 
+sudo chown -R otrs.apache /opt/otrs 
 
 echo "Check perl dependencies"
 sudo perl /opt/otrs/bin/otrs.CheckModules.pl
