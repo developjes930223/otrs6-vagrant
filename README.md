@@ -22,8 +22,8 @@ cd otrs-vagrant
 
 If you need a share directory run: 
 
-1 - vagrant plugin install vagrant-vbguest
-2 - vagrant vguest
+1. vagrant plugin install vagrant-vbguest
+2. vagrant vguest
 
 ```
 3 - uncomment setting in Vagrantfile
